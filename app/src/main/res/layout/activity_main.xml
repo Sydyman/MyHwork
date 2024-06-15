@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/cont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="50sp"
+            />
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/cont"
+        android:background="@color/Lightgreen"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintBottom_toTopOf="@+id/button">
+        <EditText
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="#99C867"
+            android:padding="12dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="#99C867"
+            android:padding="12dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="#99C867"
+            android:padding="12dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"/>
+        
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/owl_id"
+        android:src="@drawable/owl2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_trivia"
+        app:layout_constraintEnd_toEndOf="@+id/text_trivia"
+        app:layout_constraintStart_toStartOf="@+id/text_trivia"
+
+
+        />
+    <ImageView
+        android:id="@+id/vopros_znak"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/vopros"
+        app:layout_constraintBottom_toTopOf="@+id/owl_id"
+        app:layout_constraintStart_toStartOf="@+id/owl_id"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/owl_id"
+        android:layout_marginTop="120dp"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/vopros"
+        app:layout_constraintEnd_toStartOf="@+id/vopros_znak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/vopros_znak"
+        android:layout_marginStart="150dp"
+
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/vopros"
+        app:layout_constraintStart_toEndOf="@+id/vopros_znak"
+        app:layout_constraintBottom_toBottomOf="@+id/vopros_znak"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="150dp"
+        />
+
+
+
+
+
+
+    
+    
+    <Button
+        android:drawableEnd="@drawable/left"
+
+        android:id="@+id/button"
+        android:backgroundTint="@color/white"
+        android:textSize="30sp"
+        android:text="NEXT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/text_trivia"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        app:layout_constraintVertical_bias="0.90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
